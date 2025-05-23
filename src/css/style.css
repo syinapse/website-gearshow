@@ -69,7 +69,7 @@ a {
     padding: 0 2rem;
 }
 
-.header a:hover {
+h2 a:hover {
     color: var(--color-primary);
 }
 
@@ -100,7 +100,7 @@ span {
     cursor: pointer;
     position: relative;
     z-index: 2;
-    /* display: none; */
+    display: none;
 }
 
 .item-menu {
@@ -114,8 +114,51 @@ span {
     display: block;
     width: 3rem;
     height: .3rem;
-    background-color: var(--color-light);
+    background-color: var(--color-text);
     margin: .5rem auto;
-    border-radius: var(--radius);
+    border-radius: 20px;
     transition: var(--transition);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.footer-slides {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.footer-slide-options {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideHero {
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--color-text);
+    border-radius: 100%;
+    transition: var(--transition);
+}
+
+.buttonHero {
+    border: 0;
+    font-family: "Urbanist";
+    background-color: transparent;
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.buttonHero:hover {
+    opacity: .6;
 }
