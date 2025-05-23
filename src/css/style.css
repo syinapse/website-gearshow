@@ -9,7 +9,7 @@
 :root {
     --color-background: #5e503f;
     --color-text: #f2f4f3;
-    --color-primary: #3E92CC;
+    --color-primary: #00a6fb;
     --color-secundary: #13293D;
     --color-accent: #ffd166;
     --transition: 0.5s;
@@ -17,7 +17,7 @@
 }
 
 ::selection {
-    background-color: rgba(62, 145, 204, 0.575);
+    background-color: #00a7fb83;
 }
 
 html {
@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    background-color: var(--color-background);
     font-size: 1.5rem;
     font-family: "Urbanist";
 }
@@ -161,4 +162,38 @@ footer {
 
 .buttonHero:hover {
     opacity: .6;
+}
+
+.outroHero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.outroHero {
+    position: relative;
+    padding: 0;
+    min-height: 40dvh;
+    z-index: 2;
+    color: var(--color-text);
+}
+
+.highlight {
+    color: var(--color--background);
+    margin: auto;
+    text-align: center;
+}
+
+.outroHero h1 {
+    font-size: clamp(3rem, 3.2vmax, 6rem)
+}
+
+.outroHero p {
+    margin-top: 10px;
+    font-size: clamp(1.3rem, 1.2vmax, 4rem)
 }
