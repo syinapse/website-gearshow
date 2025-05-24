@@ -1,0 +1,48 @@
+#heroSobre {
+    background-image: var(--gradient), url("../assets/img/banners/sobreBanner.jpg");
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.sobre-content h1, p {
+    color: var(--color-text);
+}
+
+.sobre-content h1 {
+    text-align: left;
+    font-size: 5rem;
+}
+
+.sobre-content p {
+    font-size: 2rem;
+    text-align: justify;
+    width: 70%;
+}
+
+.highlight a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 0px;
+    font-size: 4rem;
+    padding: 1rem .5rem;
+    
+}
+
+.highlight a:hover {
+    background-color: transparent;
+}
