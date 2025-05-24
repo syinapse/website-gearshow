@@ -1,0 +1,20 @@
+body {
+    background-color: var(--color-background);
+}
+
+.showroom {
+    animation: move 15s linear;
+    background-color: black;
+    animation-iteration-count: infinite;
+    transition: background-image .5s ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}

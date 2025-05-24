@@ -144,6 +144,14 @@ h2 {
     color: var(--color-text);
 }
 
+.highlight p {
+    font-family: "Saira";
+    color: var(--color-text);
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    transition: 1s;
+}
+
 .highlight a {
     color: var(--color-primary);
     border: 3px solid var(--color-primary);
