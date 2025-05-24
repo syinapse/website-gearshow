@@ -6,7 +6,7 @@ body {
     animation: move 15s linear;
     background-color: black;
     animation-iteration-count: infinite;
-    transition: background-image .5s ease-in-out;
+    transition: background-image .3s ease-in-out;
 }
 
 .location {
@@ -74,6 +74,22 @@ body {
 
 .location-map img:hover {
     opacity: .7;
+}
+
+.highlight a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 0px;
+    font-size: 4rem;
+    padding: 1rem .5rem;
+    
+}
+
+.highlight a:hover {
+    background-color: transparent;
 }
 
 @keyframes move {
