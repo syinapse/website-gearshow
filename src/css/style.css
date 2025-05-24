@@ -137,7 +137,8 @@ span {
     animation: enter 1.5s ease-in-out;
 }
 
-.highlight h1, h2 {
+.highlight h1,
+h2 {
     font-family: "Saira";
     font-size: 6rem;
     color: var(--color-text);
@@ -188,6 +189,8 @@ span {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     padding: 2rem;
 }
 
@@ -206,7 +209,8 @@ footer {
 }
 
 .slideHero {
-    display: block;
+    display: flex;
+    align-content: center;
     width: .7rem;
     height: .7rem;
     background-color: var(--color-text);
@@ -226,6 +230,23 @@ footer {
 }
 
 .buttonHero:hover {
+    opacity: .6;
+}
+
+.buttonHeroIcon {
+    display: flex;
+    border: 0;
+    font-family: "Urbanist";
+    background-color: transparent;
+    color: var(--color-accent);
+    align-items: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.buttonHeroIcon:hover {
     opacity: .6;
 }
 
@@ -266,4 +287,50 @@ footer {
 .carsHero {
     padding: 1rem;
     background-image: var(--gradient), url("../assets/img/car_bg.jpg");
+}
+
+@keyframes enterMarch {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.circle {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    border-bottom: 5px solid gray;
+    height: 10px;
+    width: 95%;
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 10rem;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 20rem;
+    transform-style: preserve-3d;
+    transform: rotateX(35deg);
+    z-index: -1;
+    animation: rotateCircle 1s ease-in-out;
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotateY(-50deg)
+    }
+    to {
+        transform: rotateX(35deg);
+    }
+}
+
+.circle:hover {
+    transition: rotateCircle 1s ease-in-out;
 }
