@@ -1,0 +1,74 @@
+body {
+    color: var(--color-text);
+}
+
+#heroMarcas::before {
+    background-image: var(--gradient), url("../assets/img/marcasHero.jpg");
+}
+
+.header {
+    background-color: var(--color-secundary);
+    height: 8rem;
+}
+
+#porsche {
+    background-color: white;
+}
+
+.container {
+    padding: 1rem 4rem;
+    margin-top: 4rem;
+}
+
+.container h2 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.cars-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.carslogo-grid-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    transition: var(--transition);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    filter: grayscale(.8);
+}
+
+.carslogo-grid-item img {
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.carslogo-grid-item p {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-secundary);
+    transition: var(--transition);
+}
+
+.carslogo-grid-item p:hover {
+    letter-spacing: 3px;
+}
+
+.carslogo-grid-item:hover {
+    transform: scale(0.95);
+    letter-spacing: 3.5px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.301);
+    filter: grayscale(0);
+}
