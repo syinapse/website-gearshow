@@ -18,6 +18,7 @@ body {
     width: 6%;
 }
 
+
 @keyframes enterLogo {
     from {
         opacity: 1;
@@ -41,45 +42,52 @@ body {
 
 .car-Image {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.car-Image a {
+    display: flex;
 }
 
 .car-Image img {
-    margin: auto;
-    width: 95%;
     /* -webkit-filter: drop-shadow(3px 3px 10px rgb(255, 128, 0, .3)); */
     filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, 0.8));
-    margin-top: 10rem;
+    margin: auto;
     filter: grayscale(.3);
     transition: var(--transition);
     cursor: pointer;
     animation: enterMarch 1s ease-in-out;
-}
-
-.car-selected {
-    position: relative;
-    top: 4rem;
-    opacity: 1;
-    text-align: center;
-    background-color: var(--mclaren-primary);
-    box-shadow: 0px 0px 10px gray;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 2rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .5s;
-    animation: enterMarch 1s ease-in-out;
-}
-
-.car-selected a {
-    color: black;
+    z-index: 2;
 }
 
 .car-Image img:hover {
     filter: grayscale(0);
     transform: scale(0.9);
-    filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, 1));
+    filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, .4));
+}
+
+#mclartura, #mcl720, #mclp1 {
+    display: none;
+}
+
+#mclartura .car-Image img {
+    margin-top: 25rem;
+    width: 95%;
+}
+#mclartura .car-title, #mcl720 .car-title {
+    bottom: 35rem;
+}
+
+#mcl720 .car-Image img {
+     width: 70%;
+}
+
+#mclp1 .car-title {
+    bottom: 40rem;
+}
+
+#mcl .car-Image img {
+    width: 60%;
 }
 
 .car-selected:hover {
@@ -88,12 +96,18 @@ body {
 
 .car-title {
     position: absolute;
-    margin-bottom: 30rem;
+    /* bottom: 40rem; */
     font-size: 32rem;
     color: gray;
     opacity: .3;
     text-transform: uppercase;
     font-weight: 500;
-    z-index: -1;
+    z-index: 1;
     animation: enterMarch 1s ease-in-out;
+}
+
+.sliders {
+    margin: 0 auto;
+    height: 80dvh;
+    overflow: hidden;
 }
