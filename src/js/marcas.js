@@ -9,7 +9,6 @@ let idx = 1;
 showCars(idx);
 
 function plusCarsSlide(n) {
-    console.log('fui clicado')
     showCars(idx += n);
 }
 

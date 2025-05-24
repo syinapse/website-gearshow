@@ -1,74 +1,113 @@
 body {
-    color: var(--color-text);
-}
-
-#heroMarcas::before {
-    background-image: var(--gradient), url("../assets/img/marcasHero.jpg");
+    transition: all .5s;
 }
 
 .header {
-    background-color: var(--color-secundary);
-    height: 8rem;
+    background-color: transparent;
 }
 
-#porsche {
-    background-color: white;
-}
-
-.container {
-    padding: 1rem 4rem;
-    margin-top: 4rem;
-}
-
-.container h2 {
-    font-size: 4.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.cars-grid {
-    display: flex;
+.logo {
+    display: none;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 8rem;
+    align-items: flex-start;
+    vertical-align: top;
+    animation: enterLogo 1s ease-in-out;
 }
 
-.carslogo-grid-item {
+.logo img {
+    width: 6%;
+}
+
+
+@keyframes enterLogo {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.car-exibition {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    transition: var(--transition);
-    border-radius: 10px;
-    letter-spacing: 1px;
-    filter: grayscale(.8);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 100;
 }
 
-.carslogo-grid-item img {
-    border-radius: 10px;
-    width: 100%;
-    height: 350px;
+.car-Image {
+    display: flex;
+    justify-content: center;
+}
+
+.car-Image a {
+    display: flex;
+}
+
+.car-Image img {
+    /* -webkit-filter: drop-shadow(3px 3px 10px rgb(255, 128, 0, .3)); */
+    filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, 0.8));
+    margin: auto;
+    filter: grayscale(.3);
     transition: var(--transition);
     cursor: pointer;
+    animation: enterMarch 1s ease-in-out;
+    z-index: 2;
 }
 
-.carslogo-grid-item p {
-    position: absolute;
-    bottom: 2rem;
-    left: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-secundary);
-    transition: var(--transition);
-}
-
-.carslogo-grid-item p:hover {
-    letter-spacing: 3px;
-}
-
-.carslogo-grid-item:hover {
-    transform: scale(0.95);
-    letter-spacing: 3.5px;
-    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.301);
+.car-Image img:hover {
     filter: grayscale(0);
+    transform: scale(0.9);
+    filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, .4));
+}
+
+#mclartura, #mcl720, #mclp1 {
+    display: none;
+}
+
+#mclartura .car-Image img {
+    margin-top: 25rem;
+    width: 95%;
+}
+#mclartura .car-title, #mcl720 .car-title {
+    bottom: 35rem;
+}
+
+#mcl720 .car-Image img {
+     width: 70%;
+}
+
+#mclp1 .car-title {
+    bottom: 40rem;
+}
+
+#mcl .car-Image img {
+    width: 60%;
+}
+
+.car-selected:hover {
+    transform: scale(1.2);
+}
+
+.car-title {
+    position: absolute;
+    /* bottom: 40rem; */
+    font-size: 32rem;
+    color: gray;
+    opacity: .3;
+    text-transform: uppercase;
+    font-weight: 500;
+    z-index: 1;
+    animation: enterMarch 1s ease-in-out;
+}
+
+.sliders {
+    margin: 0 auto;
+    height: 80dvh;
+    overflow: hidden;
 }
