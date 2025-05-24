@@ -41,7 +41,7 @@ body {
     transition: var(--transition);
     border-radius: 10px;
     letter-spacing: 1px;
-    filter: grayscale(.4);
+    filter: grayscale(.8);
 }
 
 .carslogo-grid-item img {

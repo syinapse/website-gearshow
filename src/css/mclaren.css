@@ -1,0 +1,60 @@
+.header {
+    background-color: transparent;
+}
+
+.car-lists {
+    width: 80dvw;
+    /* padding: 20rem; */
+    height: 100%;
+    margin: auto;
+    color: var(--color-text);
+}
+
+.car-lists img {
+    width: 60%;
+}
+
+.item-active {
+    display: flex;
+}
+
+.car-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+
+.car-information {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 2rem;
+    text-align: right;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--mclaren-primary);
+    font-weight: bold;
+    border: 0;
+    font-family: "Urbanist";
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.information:hover {
+    background-color: #ff800081;
+    transform: scale(.9);
+}
