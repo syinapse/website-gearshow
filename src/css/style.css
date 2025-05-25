@@ -115,6 +115,10 @@ h2 a:hover {
 span {
     color: var(--color-primary);
 }
+.item-menu 
+i {
+    display: none;
+}
 
 .header-menu {
     display: flex;
@@ -221,7 +225,7 @@ footer {
     align-content: center;
     width: 2rem;
     height: 2rem;
-    border: 2px solid  white;
+    border: 2px solid white;
     /* background-color: var(--color-text); */
     border-radius: 100%;
     transition: var(--transition);
@@ -335,6 +339,7 @@ footer {
     from {
         transform: rotateY(-50deg)
     }
+
     to {
         transform: rotateX(35deg);
     }
@@ -342,4 +347,72 @@ footer {
 
 .circle:hover {
     transition: rotateCircle 1s ease-in-out;
+}
+
+@media(width <= 1080px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .titles {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .item-menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .item-menu i {
+        display: block;
+        align-content: center;
+    }
+
+    .header-menu {
+        width: 80%;
+        height: 100dvh;
+        background-color: rgba(19, 41, 61, 0.904);
+        backdrop-filter: blur(5px);
+        padding-left: 2rem;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: -100%;
+        gap: 1000px;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+        transition: .7s;
+    }
+    
+    .item-menu {
+        font-size: 3rem;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .hamburguer.active .barra:first-child {
+        transform: translateY(8px) rotate(360deg) rotate(45deg);
+    }
+
+    .hamburguer.active .barra:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .barra:last-child {
+        transform: translateY(-8px) rotate(-360deg) rotate(-45deg);
+    }
+
+    .header-menu {
+        gap: 6rem;
+        font-size: 3rem;
+    }
 }
