@@ -137,24 +137,46 @@ body {
     position: absolute;
 }
 
-.footer-send{
 
+.footer-send {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
-.footer-send input{
+
+.footer-send input {
     background-color: transparent;
-    outline: transparent;
+    outline: none;
     border: 1px solid #00a6fb;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
-
+    flex: 1;
+    min-width: 180px;
 }
-.footer-send button{
+
+.footer-send button {
     background-color: transparent;
-    outline: transparent;
-    border: 1px solid #00a6fb;
+    border: none;
     color: #fff;
     padding: 10px;
     border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+
+.footer-send button i {
+    font-size: 24px;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-social i{
+    font-size: 25px;
 }
