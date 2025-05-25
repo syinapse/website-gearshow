@@ -30,19 +30,19 @@ body {
     }
 }
 
+.sliders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .car-exibition {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     justify-content: center;
-    margin: auto;
     z-index: 100;
-}
-
-.car-Image {
-    display: flex;
-    justify-content: center;
 }
 
 .car-Image a {
@@ -52,6 +52,7 @@ body {
 .car-Image img {
     /* -webkit-filter: drop-shadow(3px 3px 10px rgb(255, 128, 0, .3)); */
     filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, 0.8));
+    width: 85%;
     margin: auto;
     filter: grayscale(.3);
     transition: var(--transition);
@@ -60,34 +61,48 @@ body {
     z-index: 2;
 }
 
+/* Inicio Mclaren */
+
+#mclp1 .car-Image img {
+    margin-bottom: 5rem;
+}
+
+#mcl720 .car-Image img {
+    width: 60%;
+}
+
+#mclp1 .car-title {
+    height: 200px;
+}
+/* Fim mclaren */
+
+
+/* Inicio Ferrari */
+#F40 .car-Image img {
+    width: 100%;
+}
+
+#laferrari .car-Image img {
+    width: 80%;
+}
+
+/* Final ferrari */
+
+/* Inicio porsche */
+#gt3 .car-Image img {
+    width: 70%;
+}
+
+#cayenne .car-Image img {
+    width: 70%;
+}
+
+/* Final porsche */
+
 .car-Image img:hover {
     filter: grayscale(0);
     transform: scale(0.9);
     filter: drop-shadow(3px 5px 10px rgba(160, 160, 160, .4));
-}
-
-#mclartura, #mcl720, #mclp1 {
-    display: none;
-}
-
-#mclartura .car-Image img {
-    margin-top: 25rem;
-    width: 95%;
-}
-#mclartura .car-title, #mcl720 .car-title {
-    bottom: 35rem;
-}
-
-#mcl720 .car-Image img {
-     width: 70%;
-}
-
-#mclp1 .car-title {
-    bottom: 40rem;
-}
-
-#mcl .car-Image img {
-    width: 60%;
 }
 
 .car-selected:hover {
@@ -95,8 +110,8 @@ body {
 }
 
 .car-title {
-    position: absolute;
-    /* bottom: 40rem; */
+    position: relative;
+    height: 300px;
     font-size: 32rem;
     color: gray;
     opacity: .3;
