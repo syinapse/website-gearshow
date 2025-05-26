@@ -353,11 +353,9 @@ footer {
     body {
         overflow-x: hidden;
     }
-
-    .titles {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        width: 100%;
+    
+    #indexHero {
+        position: fixed;
     }
 
     .hamburguer {
@@ -374,6 +372,13 @@ footer {
         align-content: center;
     }
 
+    .highlight h1, .highlight h2 {
+        font-size: 5rem;
+    }
+    .highlight {
+        gap: 3rem;
+    }
+
     .header-menu {
         width: 80%;
         height: 100dvh;
@@ -384,11 +389,11 @@ footer {
         z-index: 1;
         top: 0;
         right: -100%;
-        gap: 1000px;
         text-align: left;
         flex-direction: column;
         justify-content: center;
         transition: .7s;
+        border-radius: 20px 0 0 20px;
     }
     
     .item-menu {
