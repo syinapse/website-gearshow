@@ -188,6 +188,11 @@ body {
 /* == RESPONSIVO PARA CELULARES == */
 
 @media (max-width: 1080px) {
+
+    .highlight a i {
+        font-size: 5rem;
+    }
+
     .location {
         margin: 1rem 0.5rem;
         gap: 15px;
