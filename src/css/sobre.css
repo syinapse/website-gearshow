@@ -172,7 +172,8 @@
     }
 }
 
-/* RESPONSIVO PARA CELULARES */
+/* == RESPONSIVO PARA CELULARES == */
+
 @media (max-width: 600px) {
     .sobre {
         flex-direction: column;
