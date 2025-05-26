@@ -11,7 +11,7 @@ O projeto busca **traduzir** essa essência acolhedora para o digital, com um **
 
 ## 🔗 Acesse o site
 <!-- Adicionar Link do github pages -->
-👉 [https:/www.gearshow.com]()
+👉 [https:/www.gearshow.com](https://syinapse.github.io/website-gearshow/)
 
 ## 💻 Funcionalidades
 
