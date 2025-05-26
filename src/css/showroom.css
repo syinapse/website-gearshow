@@ -187,7 +187,7 @@ body {
 
 /* == RESPONSIVO PARA CELULARES == */
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
     .location {
         margin: 1rem 0.5rem;
         gap: 15px;

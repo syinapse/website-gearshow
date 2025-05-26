@@ -155,3 +155,68 @@ body {
 
 /* RESPONSIVIDADE */
 
+@media(width <= 1080px) {
+
+    .highlight h1 {
+        font-size: 4.2rem;
+    }
+
+    .container h2 {
+        font-size: 4rem
+    }
+
+    .carslogo-grid-item {
+        filter: grayscale(.3);
+    }
+
+    .carslogo-grid-item img {
+        object-fit: cover;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        /* align-items: flex-start; */
+    }
+    .footer-logo {
+        font-size: 3.5rem;
+    }
+
+    .footer-social a:not(:first-child) {
+        margin-left: 20px;
+    }
+    
+    .footer-social a i {
+        font-size: 2.4rem;
+    }
+
+    .footer-send {
+        margin: auto;
+    }
+
+    .footer-send input {
+        border: 2px solid var(--color-primary);
+        min-width: 80px;
+        font-size: 1.5rem;
+        padding: 6px;
+    }
+    .footer-send button i {
+        font-size: 3rem;
+    }
+    .footer-social {
+        gap: 10px;
+    }
+    .footer-social i {
+        font-size: 16px;
+    }
+    .footer-bottom {
+        font-size: 1.5rem;
+        margin-top: 15rem;
+        padding-top: 7px;
+        /* position: static; */
+    }
+}
