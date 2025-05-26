@@ -16,7 +16,8 @@
     gap: 2rem;
 }
 
-.sobre-content h1, p {
+.sobre-content h1,
+p {
     color: var(--color-text);
 }
 
@@ -55,7 +56,7 @@
     border: 0px;
     font-size: 4rem;
     padding: 1rem .5rem;
-    
+
 }
 
 .highlight a:hover {
@@ -133,12 +134,14 @@
 .footer-send button i {
     font-size: 24px;
 }
-.footer-social{
+
+.footer-social {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.footer-social i{
+
+.footer-social i {
     font-size: 25px;
 }
 
@@ -151,22 +154,27 @@
         gap: 3rem;
         padding: 10px;
     }
+
     .sobre-content h1 {
         font-size: 3rem;
     }
+
     .sobre-content p {
         font-size: 1.3rem;
         width: 100%;
     }
+
     .sobre-img img {
         width: 100%;
         border-radius: 16px;
     }
+
     .footer-content {
         flex-direction: column;
         gap: 30px;
         align-items: flex-start;
     }
+
     .footer-logo {
         font-size: 2rem;
     }
@@ -174,59 +182,84 @@
 
 /* == RESPONSIVO PARA CELULARES == */
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
     .sobre {
         flex-direction: column;
         margin: 1.5rem 0.5rem;
-        padding: 5px;
+        padding: 20px;
         gap: 2rem;
     }
+
     .sobre-content {
         gap: 1rem;
     }
-    .sobre-content h1 {
-        font-size: 1.5rem;
-        text-align: left;
+
+    #sobreTitle {
+        font-size: 3rem;
+        text-align: center;
     }
+
     .sobre-content p {
-        font-size: 1rem;
+        font-size: 1.7rem;
         width: 100%;
     }
+
     .sobre-img img {
-        width: 100%;
+        align-self: center;
+        object-fit: cover;
+        object-position: 30%;
+        height: 90vw;
+        width: 70%;
         border-radius: 10px;
     }
+
+    .highlight a i {
+        font-size: 5rem;
+    }
+
     .highlight a {
-        font-size: 1.3rem;
+        font-size: 2rem;
         padding: 0.5rem 0.2rem;
     }
+
     .footer-content {
         flex-direction: column;
         gap: 20px;
-        align-items: flex-start;
+        align-items: center;
     }
+
     .footer-logo {
-        font-size: 1.1rem;
+        font-size: 3.5rem;
     }
+
+    .footer-social a:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .footer-social a i {
+        font-size: 2.4rem;
+    }
+
+    .footer-send {
+        margin: auto;
+    }
+
     .footer-send input {
+        border: 2px solid var(--color-primary);
         min-width: 80px;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         padding: 6px;
+        align-self: center;
     }
+
     .footer-send button i {
-        font-size: 16px;
+        font-size: 3rem;
     }
-    .footer-social {
-        gap: 10px;
-    }
-    .footer-social i {
-        font-size: 16px;
-    }
+
     .footer-bottom {
-        font-size: 10px;
-        margin-top: 15px;
+        font-size: 1.5rem;
+        margin-top: 15rem;
         padding-top: 7px;
-        position: static;
+        /* position: static; */
     }
 }
-

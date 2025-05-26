@@ -85,7 +85,7 @@ body {
     border: 0px;
     font-size: 4rem;
     padding: 1rem .5rem;
-    
+
 }
 
 .highlight a:hover {
@@ -101,6 +101,7 @@ body {
         background-position: 100% 100%;
     }
 }
+
 .footer {
     background-color: #111;
     color: #fff;
@@ -172,12 +173,14 @@ body {
 .footer-send button i {
     font-size: 24px;
 }
-.footer-social{
+
+.footer-social {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.footer-social i{
+
+.footer-social i {
     font-size: 25px;
 }
 
@@ -189,48 +192,59 @@ body {
 
 @media (max-width: 1080px) {
 
-    .highlight a i {
-        font-size: 5rem;
-    }
+
 
     .location {
         margin: 1rem 0.5rem;
         gap: 15px;
     }
+
     .location-title {
         width: 100%;
         gap: 1rem;
         padding: 20px;
     }
+
     .location-title h1 {
         /* font-size: 4rem; */
         text-align: center;
     }
+
     .location-title p {
         font-size: 2rem;
         text-align: center;
     }
+
     .location-map {
         gap: 2rem;
     }
+
     .location-map a {
         font-size: 2rem;
         padding: 1rem 1.2rem;
     }
+
     .location-map img {
         /* height: 120px; */
         width: 70%;
         border-radius: 8px;
     }
+
+    .highlight a i {
+        font-size: 5rem;
+    }
+
     .highlight a {
         font-size: 2rem;
         padding: 0.5rem 0.2rem;
     }
+
     .footer-content {
         flex-direction: column;
         gap: 20px;
         /* align-items: flex-start; */
     }
+
     .footer-logo {
         font-size: 3.5rem;
     }
@@ -238,7 +252,7 @@ body {
     .footer-social a:not(:first-child) {
         margin-left: 20px;
     }
-    
+
     .footer-social a i {
         font-size: 2.4rem;
     }
@@ -253,15 +267,11 @@ body {
         font-size: 1.5rem;
         padding: 6px;
     }
+
     .footer-send button i {
         font-size: 3rem;
     }
-    .footer-social {
-        gap: 10px;
-    }
-    .footer-social i {
-        font-size: 16px;
-    }
+
     .footer-bottom {
         font-size: 1.5rem;
         margin-top: 15rem;
