@@ -24,7 +24,6 @@ function showCars(index) {
     }
     
     for (let i = 0; i < cars.length; i++){
-        console.log(cars[i])
         cars[i].style.display = 'none';
         select[i].style.backgroundColor = 'transparent';
     }
