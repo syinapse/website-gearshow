@@ -180,3 +180,62 @@ body {
 .footer-social i{
     font-size: 25px;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .location {
+        margin: 1rem 0.5rem;
+        gap: 15px;
+    }
+    .location-title {
+        width: 100%;
+        gap: 1rem;
+    }
+    .location-title h1 {
+        font-size: 2rem;
+    }
+    .location-title p {
+        font-size: 1.1rem;
+    }
+    .location-map {
+        gap: 2rem;
+    }
+    .location-map a {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+    .location-map img {
+        height: 120px;
+        border-radius: 8px;
+    }
+    .highlight a {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.2rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .footer-logo {
+        font-size: 1.2rem;
+    }
+    .footer-send input {
+        min-width: 80px;
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+    .footer-send button i {
+        font-size: 18px;
+    }
+    .footer-social i {
+        font-size: 18px;
+    }
+    .footer-bottom {
+        font-size: 11px;
+        margin-top: 15px;
+        padding-top: 7px;
+        position: static;
+    }
+}
