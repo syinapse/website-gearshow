@@ -1,44 +1,65 @@
 <!doctype html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/css/style.css" />
+        <link
+            href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <title>Gear Show</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <title>Gear Show</title>
-</head>
+    <body id="indexHero">
+        <section class="hero">
+            <video autoplay muted loop>
+                <source
+                    src="./src/assets/videos/videoHome.mp4"
+                    type="video/mp4"
+                />
+            </video>
+            <header class="header">
+                <h2>
+                    <a href="index.html">Gear<span>Show</span></a>
+                </h2>
+                <nav>
+                    <ul class="header-menu">
+                        <li>
+                            <a href="index.html" class="item-menu"
+                                ><i class="bxr bxs-home-alt-2"></i> Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="src/pages/showroom.html" class="item-menu"
+                                ><i class="bx bx-car"></i> Showroom</a
+                            >
+                        </li>
+                        <li>
+                            <a href="src/pages/marcas.html" class="item-menu"
+                                ><i class="bx bx-photo-album"></i> Marcas</a
+                            >
+                        </li>
+                        <li>
+                            <a href="src/pages/sobre.html" class="item-menu"
+                                ><i class="bx bx-newspaper"></i> Sobre nós</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamburguer">
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                </div>
+            </header>
 
-<body id="indexHero">
-    <section class="hero">
-        <video autoplay muted loop>
-            <source src="./src/assets/videos/videoHome.mp4" type="video/mp4">
-        </video>
-        <header class="header">
-            <h2><a href="index.html">Gear<span>Show</span></a></h2>
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="index.html" class="item-menu"><i class='bxr  bxs-home-alt-2'></i> Home</a></li>
-                    <li><a href="src/pages/showroom.html" class="item-menu"><i class='bx  bx-car'></i> Showroom</a></li>
-                    <li><a href="src/pages/marcas.html" class="item-menu"><i class='bx  bx-photo-album'></i> Marcas</a></li>
-                    <li><a href="src/pages/sobre.html" class="item-menu"><i class='bx  bx-newspaper'  ></i> Sobre nós</a></li>
-                </ul>
-            </nav>
-            <div class="hamburguer">
-                <span class="barra"></span>
-                <span class="barra"></span>
-                <span class="barra"></span>
+            <div class="highlight">
+                <h1>Bem vindo ao Gear<span>Show</span></h1>
+                <h2>Seus sonhos em clássicos e luxos.</h2>
+                <a href="./src/pages/showroom.html">Veja mais!</a>
             </div>
-        </header>
-
-        <div class="highlight">
-            <h1>Bem vindo ao Gear<span>Show</span></h1>
-            <h2>Seus sonhos em clássicos e luxos</h2>
-            <a href="./src/pages/showroom.html">Veja mais!</a>
-        </div>
-
-    </section>
-    <script src="src/js/script.js"></script>
-</body>
-
+        </section>
+        <script src="src/js/script.js"></script>
+    </body>
 </html>
